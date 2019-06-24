@@ -1,6 +1,9 @@
 package deck
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func ExampleCard() {
 	fmt.Println(Card{Rank: Ace, Suit: Heart})
@@ -15,4 +18,19 @@ func ExampleCard() {
 	// Three of Clubs
 	// King of Diamonds
 	// Joker
+}
+
+func TestNew(t *testing.T) {
+	cards := New()
+	if len(cards) != 13*4 {
+		t.Error("Wrong number of cards in a new deck.")
+	}
+}
+
+func TestDefaultSort(t *testing.T) {
+	cards := New(DefaultSort)
+
+	if cards[0] != (Card{Rank: Ace, Suit: Spade}) {
+		t.Error("Expected Ace of Spades as first card. Received: ", cards[0])
+	}
 }
