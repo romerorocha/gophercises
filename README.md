@@ -1,4 +1,6 @@
-# gophercises
-[Gophecises' Website](https://gophercises.com) Golang exercises
+# Gophercises
+[Gophecises' Website](https://gophercises.com) exercises.
 
-Just for the sake of practicing.
+Just for 'Go programming' practicing.
+
+
