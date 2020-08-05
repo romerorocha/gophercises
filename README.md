@@ -1,6 +1,6 @@
 # Gophercises
 [Gophecises' Website](https://gophercises.com) exercises.
 
-Just for 'Go programming' practicing.
+Created just for 'Go' practicing.
 
 
